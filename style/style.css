@@ -19,7 +19,7 @@ body{
 
 /* HEADER */
 
-header{
+.header{
     width: 100%;
     background-color: #F5F5F5;
     display: flex;
@@ -27,7 +27,8 @@ header{
     align-items: center;
     height: 100px;
     position: fixed;
-    z-index: 2;
+    z-index: 5;
+    border-bottom: 1px solid #131416;
 }
 
 header > .mainAncor{
@@ -45,27 +46,28 @@ header > .mainAncor > ol{
 header > .mainAncor > ol > li{
     list-style: none;
     display: flex;
-    color: #141414;
+    color: #F5F5F5;
     font-size: 16px;
     font-weight: bold;
     transition: .1s;
 }
 
-.mainAncor > ol > li > a{
+.mainAncor > ol > li > .nav_ancor{
     text-decoration: none;
-    color: #141414;
-    transition: .3s;
+    color: #F5F5F5;
+    transition: .8s;
 }
 
-.mainAncor > ol > li > a:hover{
-    color: #0E0E58;
+.mainAncor > ol > li > .nav_ancor:hover{
+    color: #28587B;
     font-weight: bold;
     transform: scale(1.1);
+    transition: transform 0.2s ease-in-out;
 }
 
 .mainAncor > a {
     text-decoration: none;
-    border: 2px solid #141414;
+    border: 2px solid #28587B;
     border-radius: 6px;
     padding: 5px;
     font-weight: bold;
@@ -74,9 +76,10 @@ header > .mainAncor > ol > li{
 }
 
 .mainAncor > a:hover {
-    transform: rotate(10deg);
+    transform: scale(1.1);
     transition: transform 0.2s ease-in-out;
-    border-color: #28587B;
+    border-color: #0E0E58;
+    color: #0E0E58;
 }
 
 
@@ -87,9 +90,9 @@ header > .mainAncor > ol > li{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;  /* Adjust height for header */
+    height: 100vh;  
     width: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/DmfContabilidade/assets/home-image.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/assets/home-image.jpg);
     background-size: cover;
     background-position: center center;
     zoom: 1;
@@ -110,13 +113,14 @@ header > .mainAncor > ol > li{
 /* TEXT HOME */ 
 
 .objetivos{
-    height: auto;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 400px;
+    height: 800px;
     gap: 20px;
+    position: relative; 
 }
 
 .text_empresa{
@@ -125,21 +129,34 @@ header > .mainAncor > ol > li{
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2), 0 1px 3px rgba(0, 0, 0, 0.12);
     padding: 30px;
     width: 800px;
+    z-index: 3;
+    background-color:#F5F5F5;
 }
 
+.objetivos > img{
+    position: absolute;
+    width: 300px;
+    height: 500px;
+    bottom: 0px;
+    right: 65px;
+}
 
 /* CARD SERVICOS */
 
 .cards{
-    height: 500px;
+    height: 100vh;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row; 
     gap: 100px;
-    padding-top: 80px;
-    background-color: #131416;
-    border: 1px solid green;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/assets/negocio_bg.jpg);
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    zoom: 1;
 }
 
 .card_servicos{
@@ -159,6 +176,22 @@ header > .mainAncor > ol > li{
     justify-content: flex-start;
 }
 
+.card_servicos > img {
+    position: relative;
+    bottom: 0px;
+    width: 150px;
+    height: 150px;
+}
+
+/* CONTATO */
+
+.contato{
+    border: 1px solid red;
+    width: 100%;
+    height: 820px;
+}
+
+
 /* ANIMATIONS */
 
 @keyframes typing {
@@ -167,11 +200,11 @@ header > .mainAncor > ol > li{
     }
 
     50%{
-        width: 62.2ch;
+        width: 63.6ch;
     }
 
     75%{
-        width: 62.2ch;
+        width: 63.6ch;
     }
 
     100%{
@@ -185,4 +218,47 @@ header > .mainAncor > ol > li{
     }
 }
 
+html {
+    scroll-behavior: smooth;
+}
 
+.linhas {
+    border: 1px solid green;
+    width: 100%;
+    height: 800px;
+    position: absolute;
+    overflow: hidden;
+    z-index: 2;
+    top: 0; 
+  }
+  
+
+.animation_linhas{
+
+}
+
+/*  CLASS JS */
+
+.transparent_header{
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100px;
+    position: fixed;
+    z-index: 5;
+}
+
+.nav_ancor_white{
+    text-decoration: none;
+    color: #131416;
+    transition: .8s;
+}
+
+.nav_ancor_white:hover{
+    color: #0E0E58;
+    font-weight: bold;
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in-out;
+}
