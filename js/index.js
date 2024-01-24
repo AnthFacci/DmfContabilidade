@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // VÁRIAVEIS 
+    // VARIABLES
     const header = document.querySelector('#header');
     const nav_ancor = document.querySelectorAll('.nav_ancor');
 
