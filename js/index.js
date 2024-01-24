@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
             var targetElement = document.getElementById(targetId);
     
             if (targetElement) {
-                var offset = 0; // Não leva em consideração a altura do cabeçalho
+                var offset = 0; 
     
                 window.scrollTo({
                     top: targetElement.offsetTop - offset,
