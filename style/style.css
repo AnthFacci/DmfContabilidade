@@ -112,10 +112,12 @@ header > .mainAncor > ol > li{
 
 .main_home > a{
     position: absolute;
-    background-color: #1B9D4D;
-    border: 3px solid;
+    /* background-color: #1B9D4D; */
+    background-color: #28587B;
+    border: 2px solid;
     /* animation: changeBorderColor 3s infinite; */
-    border-color: #0F572B;
+    /* border-color: #0F572B; */
+    border-color: #F4F6F5;
     color: #F4F6F5;
     border-radius: 20px;
     padding: 15px;
@@ -165,6 +167,7 @@ header > .mainAncor > ol > li{
     width: 800px;
     z-index: 3;
     background-color:#F5F5F5;
+    font-weight: bold;
 }
 
 .icons{
@@ -251,6 +254,7 @@ header > .mainAncor > ol > li{
     background-repeat: no-repeat;
     background-attachment: fixed;
     zoom: 1;
+    flex-wrap: wrap;
 }
 
 .card_servicos{
@@ -295,8 +299,9 @@ header > .mainAncor > ol > li{
 
 .contato{
     width: 100%;
-    height: 820px;
+    height: 910px;
     position: relative;
+    margin: 0;
 }
 
 .google_maps{
@@ -313,9 +318,10 @@ header > .mainAncor > ol > li{
 
 .text_contact{
     font-size: 24px;
-    padding-top: 45px;
+    padding-top: 115px;
     display: flex;
     justify-content: center;
+    color: #28587B;
 }
 
 .img_contact{
@@ -353,8 +359,7 @@ header > .mainAncor > ol > li{
     position: absolute;
     right: 330px;
     bottom: 475px;
-    width:  550px;
-
+    width:  565px;
 }
 
 .redes_sociais{
@@ -371,6 +376,7 @@ header > .mainAncor > ol > li{
     text-decoration: none;
     color: #131416;
     font-size: 30px;
+    transition: .4s;
 }
 
 .icon_meios{
@@ -381,6 +387,7 @@ header > .mainAncor > ol > li{
 .meio{
     display: flex;
     align-items: center;
+    font-weight: bold;
 }
 
 .meio > span{
@@ -388,6 +395,51 @@ header > .mainAncor > ol > li{
     gap: 10px;
     justify-content: center;
 }
+
+.ancor_redes:hover{
+    transform: scale(1.1);
+}
+
+
+.contato > a{
+    position: absolute;
+    background-color: #28587B;
+    border: 2px solid;
+    border-color: #F4F6F5;
+    color: #F4F6F5;
+    border-radius: 20px;
+    padding: 15px;
+    bottom: 300px;
+    left: 800px;
+    text-decoration: none;
+    transition: .6s;
+    font-size: 16px;
+}
+
+.contato > a:hover{ 
+    transform: scale(1.1);
+}
+
+/* FOOTER */
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    z-index: 5;
+    font-weight: bold;
+    font-size: 12px;
+} 
+
+
+/* .ancor_btn_home{
+    font-weight: bold;
+    display: flex;
+    gap: 12px;
+} */
 
 /* ANIMATIONS */
 
@@ -469,3 +521,5 @@ html {
     transform: scale(1.1);
     transition: transform 0.2s ease-in-out;
 }
+
+/* RESPOSIVIDADE */
