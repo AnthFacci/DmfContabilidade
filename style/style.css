@@ -298,10 +298,13 @@ header > .mainAncor > ol > li{
 /* CONTATO */
 
 .contato{
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    height: 910px;
+    height: 952px;
     position: relative;
     margin: 0;
+    gap: 60px;
 }
 
 .google_maps{
@@ -325,8 +328,8 @@ header > .mainAncor > ol > li{
 }
 
 .img_contact{
-    position: absolute;
-    display: block;
+    /* position: absolute;
+    display: block; */
     width: 400px;
     height: 250px;
     bottom: 410px;
@@ -337,6 +340,14 @@ header > .mainAncor > ol > li{
     cursor: pointer;
     transition: all  0.5s linear;
     overflow: hidden;
+}
+
+.mid_contato{
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
 }
 
 .img_contact > #img_contato{
@@ -356,7 +367,7 @@ header > .mainAncor > ol > li{
     display: flex;
     flex-direction: column;
     gap: 15px;
-    position: absolute;
+    /* position: absolute; */
     right: 330px;
     bottom: 475px;
     width:  565px;
@@ -400,23 +411,27 @@ header > .mainAncor > ol > li{
     transform: scale(1.1);
 }
 
+.ancor_wpp_contact{
+   width: 100%;
+   height: auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
 
-.contato > a{
-    position: absolute;
+.ancor_wpp_contact > a{
+    width: 337px;
     background-color: #28587B;
     border: 2px solid;
-    border-color: #F4F6F5;
     color: #F4F6F5;
     border-radius: 20px;
     padding: 15px;
-    bottom: 300px;
-    left: 800px;
     text-decoration: none;
     transition: .6s;
     font-size: 16px;
 }
 
-.contato > a:hover{ 
+.ancor_wpp_contact > a:hover{ 
     transform: scale(1.1);
 }
 
@@ -427,7 +442,7 @@ footer{
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 60px;
+    height: 40px;
     background-color: white;
     z-index: 5;
     font-weight: bold;
