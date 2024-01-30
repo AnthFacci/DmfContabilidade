@@ -377,10 +377,6 @@ header > .mainAncor > ol > li{
     align-items: center;
 }
 
-.email{
-    font-size: 30px;
-}
-
 .ancor_redes{
     text-decoration: none;
     color: #131416;
@@ -397,6 +393,7 @@ header > .mainAncor > ol > li{
     display: flex;
     align-items: center;
     font-weight: bold;
+    gap: 8px;
 }
 
 .meio > span{
@@ -713,4 +710,260 @@ html {
     .contato{
         gap: 75px;
     }
+}
+
+@media screen and (max-width: 960px) {
+    .text_animation{
+        font-size: 24px;
+    }
+
+    .main_home > a{
+        font-size: 14px;
+    }
+
+    .icons{
+        gap: 50px;
+    }
+
+    .text_empresa {
+        width: 450px;
+     }
+
+     .icons > img{
+        width: 55px;
+        height: 55px;
+     }
+
+     #doc_icon{
+        width: 60px;
+        height: 60px;
+    }
+
+    #doc_martelo{
+        width: 65px;
+        height: 65px;
+
+    }
+
+    #doc_idea{
+        width: 65px;
+        height: 65px;
+    }
+
+    .img_contact{
+        width: 250px;
+        height: 150px;
+    }
+    
+    .img_contact > #img_contato{
+        width: 250px;
+        height: 150px;
+    }
+
+    .meio > span{
+        font-size: 15px;
+    }
+
+    .contato{
+        gap: 90px;
+    }
+
+    .google_maps{
+        height: 320px;
+    }
+
+    .img_contact{
+        margin-left: 30px;
+    }
+
+    .ancor_redes{
+        font-size: 26px;
+    }
+
+    .email{
+        font-size: 28px;
+    }
+
+    .text_animation{
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 870px) {
+ 
+     .text_animation{
+        font-size: 22px;
+     }
+
+     .img_contact{
+        margin-left: 45px;
+    }
+
+    .mid_contato{
+        gap: 25px;
+    }
+
+    .meio > span{
+        font-size: 14px;
+    }
+
+    .cards{
+        padding-top: 115px;
+    }
+
+    .objetivos > img{
+        right: -55px;
+     }
+}
+
+@media screen and (max-width: 830px) {
+
+    .img_contact{
+       margin-left: 30px;
+   }
+}
+
+@media screen and (max-width: 800px) {
+
+    .text_animation{
+        font-size: 20px;
+     }
+
+    .objetivos{
+        gap: 40px;
+     }
+
+    .objetivos > img{
+        right: -60px;
+     }
+
+     .icons{
+        gap: 25px;
+    }
+
+    .text_empresa {
+        width: 350px;
+     }
+
+     .icons > img{
+        width: 45px;
+        height: 45px;
+     }
+
+     #doc_icon{
+        width: 50px;
+        height: 50px;
+    }
+
+    #doc_martelo{
+        width: 55px;
+        height: 55px;
+
+    }
+
+    #doc_idea{
+        width: 55px;
+        height: 55px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .img_contact{
+        margin-left: 12px;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+
+    .text_animation{
+        font-size: 18px;
+     }
+    
+    .main_home > a{
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .text_empresa {
+        width: 300px;
+     }
+
+     .icons > img{
+        width: 35px;
+        height: 35px;
+     }
+
+     #doc_icon{
+        width: 40px;
+        height: 40px;
+    }
+
+    #doc_martelo{
+        width: 45px;
+        height: 45px;
+
+    }
+
+    #doc_idea{
+        width: 45px;
+        height: 45px;
+    }
+
+    .img_contact{
+        margin-left: 30px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+
+     .icons > img{
+        width: 45px;
+        height: 45px;
+    
+     }
+
+     #doc_icon{
+        width: 50px;
+        height: 50px;
+    }
+
+    #doc_martelo{
+        width: 50px;
+        height: 53px;
+
+    }
+
+    #doc_idea{
+        width: 50px;
+        height: 53px;
+    }
+
+    .objetivos{
+        height: auto;
+        padding: 100px;
+    }
+
+    .objetivos > img{
+        width: 600px;
+        height: 400px;
+        right: 0px;
+     }
+
+     .text_empresa{
+        margin-right: auto;
+        margin-left: auto;
+        align-self: start;
+        width: 450px;
+        margin-bottom: 300px;
+     }
+
+     .icons{
+        bottom: 250px;
+        left: 140px;
+        gap: 20px;
+        position: absolute;
+     }
 }
