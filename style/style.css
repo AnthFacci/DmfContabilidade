@@ -36,7 +36,6 @@ html, body{
 
 header > .mainAncor{
     display: flex;
-    justify-content: space-between;
     align-items: center;
     gap: 20px;
 }
@@ -69,6 +68,9 @@ header > .mainAncor > ol > li{
 }
 
 .mainAncor > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
     border: 2px solid #28587B;
     border-radius: 6px;
@@ -115,11 +117,11 @@ header > .mainAncor > ol > li{
 
 .main_home > a{
     position: absolute;
-    /* background-color: #1B9D4D; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #28587B;
     border: 2px solid;
-    /* animation: changeBorderColor 3s infinite; */
-    /* border-color: #0F572B; */
     border-color: #F4F6F5;
     color: #F4F6F5;
     border-radius: 20px;
@@ -1064,18 +1066,19 @@ html {
     }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 428px) {
 
     .text_animation{
         font-size: 11px;
-        transform: scaleY(2);
+        transform: scaleY(2.1);
+        
     }
 
     .text_empresa{
         margin-top: 10px;
         align-self: center;
         justify-self: center;
-        width: 400px;
+        width: 380px;
     }
 
     .objetivos{
@@ -1149,4 +1152,95 @@ html {
     .google_maps{
         height: 200px;
     }
+
+    footer{
+        font-size: 10px;
+    }
+
+    .nav_ancor{
+        font-size: 11px;
+    }
+
+    .mainAncor > a {
+        font-size: 12px;
+        padding: 3px;
+        font-weight: bold;
+        transition: .8s;
+        color: #28587B;
+        height: 22px;
+    }
+
+    .header{
+        height: 80px;
+    }
+
+    header > .mainAncor{
+        gap: 8px;
+    }
+
+    header > .mainAncor > ol{
+        display: flex;
+        gap: 8px;
+    }
+
+    .main_home > a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 8px;
+        font-size: 10px;
+    }
+
+    .header > .mainAncor > ol > li > a{
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+
+    .text_animation{
+        font-size: 10px;
+        transform: scaleY(2.4);
+        
+    }
+
+    .text_empresa{
+        width: 340px;
+        margin-top: 0px;
+    }
+
+
+    .objetivos > img{
+        width: 600px;
+        height: 400px;
+        right: -45px;
+    }
+
+    .icons{
+        margin-right: 135px;
+        gap: 12px;
+    }
+
+    .icons > img{
+        width: 25px;
+        height: 25px;
+    
+     }
+
+     #doc_icon{
+        width: 30px;
+        height: 30px;
+    }
+
+    #doc_martelo{
+        width: 30px;
+        height: 33px;
+
+    }
+
+    #doc_idea{
+        width: 30px;
+        height: 33px;
+    }
+
 }
