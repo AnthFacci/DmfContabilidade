@@ -4,7 +4,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const nav_ancor = document.querySelectorAll('.nav_ancor');
     const objetivos = document.getElementById('objetivos_ancor');
     const size_objetivos = objetivos.offsetTop;
-    console.log('aq', size_objetivos);
     //EVENT
     window.addEventListener('scroll', ()=>{
         if(window.scrollY >= size_objetivos){
