@@ -20,6 +20,16 @@ html, body{
     overflow-x: hidden;
 }
 
+::-webkit-scrollbar {
+    width: 13px; 
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #28587B; 
+    border-radius: 10px;
+}
+
+
 /* HEADER */
 
 .header{
