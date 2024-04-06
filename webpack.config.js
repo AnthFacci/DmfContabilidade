@@ -2,6 +2,12 @@ const path = require('path');
 const babelPlugin = require('babel-loader');
 
 module.exports = {
+    devServer: {
+        static: {
+            directory: path.resolve(__dirname)
+        }
+    }
+    ,
     entry: {
         index: './js/index.js'
     },
