@@ -1,3 +1,5 @@
+import '../style/style.css';
+
 document.addEventListener('DOMContentLoaded', () => {
     // VARIABLES
     const header = document.querySelector('#header');
